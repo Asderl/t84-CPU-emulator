@@ -12,6 +12,7 @@ private:
 	uint8_t* getitem(int addr);
 
 public:
+	int size;
 	int offset;
 	uint8_t* memory;
 	Memory(int memsize, int base_offset);

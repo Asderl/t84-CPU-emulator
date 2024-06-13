@@ -12,6 +12,7 @@ uint8_t* Memory::getitem(int addr)
 
 Memory::Memory(int memsize, int base_offset)
 {
+	this->size = memsize;
 	this->memory = new uint8_t[memsize]{ 0 };
 	this->offset = base_offset;
 }
